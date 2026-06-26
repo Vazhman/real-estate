@@ -1,0 +1,20 @@
+services:
+  p4_wordpress:
+    image: wordpress:latest
+    container_name: p4_wordpress
+    restart: always
+    ports:
+      - "8104:80"
+    environment:
+      WORDPRESS_DB_HOST: gai_mysql
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: RootPass2024!
+      WORDPRESS_DB_NAME: p4_realestate
+      WORDPRESS_TABLE_PREFIX: p4_
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    networks:
+      - gai_gai_net
+networks:
+  gai_gai_net:
+    external: true

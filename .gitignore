@@ -1,0 +1,15 @@
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/plugins/
+wp-content/languages/
+wp-content/themes/hello-elementor/
+wp-content/themes/twentytwentyfive/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentytwo/
+wp-config.php
+.env
+*.log
+.DS_Store
+Thumbs.db
